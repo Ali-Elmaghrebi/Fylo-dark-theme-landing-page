@@ -353,7 +353,7 @@ footer .container > img {
     grid-template-columns: 1fr auto auto auto auto;
     gap: 15px;
   }
-  footer .foot > img {
+  footer .container > img {
     margin-left: 0px;
   }
 }
