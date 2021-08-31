@@ -1,0 +1,410 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+}
+/* Start Header */
+header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+header img {
+  width: 75px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin-left: 20px;
+}
+@media (min-width: 768px) {
+  header img {
+    width: 160px;
+  }
+}
+header ul li a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+/* End Header */
+/* Start Introduction */
+.introduction {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(217, 28%, 15%);
+  background-image: url(images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+@media (min-width: 1200px) {
+  .introduction {
+    background-image: url(images/bg-curvy-desktop.svg);
+  }
+}
+.introduction img {
+  max-width: 100%;
+  margin: 50px 0px;
+}
+.introduction h1 {
+  font-size: 24px;
+  max-width: 680px;
+  margin: 0px auto;
+}
+.introduction p {
+  max-width: 550px;
+  margin: 25px auto;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .introduction h1 {
+    font-size: 40px;
+  }
+  .introduction p {
+    font-size: 18px;
+  }
+}
+.introduction a {
+  display: inline-block;
+  padding: 15px 85px;
+  color: white;
+  background-image: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 30px;
+}
+.introduction a:hover {
+  background-image: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+/* End Introduction */
+/* Start Features */
+main .features {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+main .features .container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  text-align: center;
+}
+main .features .container h3 {
+  font-size: 18px;
+  margin: 25px 0px 15px;
+}
+@media (min-width: 768px) {
+  main .features .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1150px;
+  }
+  .feat {
+    width: 375px;
+    margin: 0px auto;
+  }
+}
+/* End Features */
+/* Start Productivity */
+.productivity .container > img {
+  max-width: 100%;
+  margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+  .productivity .container {
+    text-align: center;
+  }
+}
+.productivity .advice h3 {
+  font-size: 17px;
+  font-weight: 700;
+  padding-left: 6px;
+}
+.productivity .advice p {
+  margin: 15px 0px;
+}
+@media (min-width: 1200px) {
+  .productivity .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+  }
+  .productivity .container > img {
+    flex: 1;
+  }
+  .productivity .advice {
+    text-align: start;
+    flex: 1;
+    font-size: 18px;
+  }
+  .productivity .advice h3 {
+    padding-left: 0px;
+    font-size: 50px;
+  }
+}
+.productivity .advice .link {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 5px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid hsl(176deg 68% 64% / 90%);
+}
+.productivity .advice .link:hover {
+  border-bottom-color: hsl(0, 0%, 100%);
+}
+.productivity .advice .link:hover .arrow {
+  fill: hsl(0, 0%, 100%);
+}
+.productivity .advice .link:hover a {
+  color: hsl(0, 0%, 100%);
+}
+.productivity .advice a {
+  color: hsl(176deg 68% 64% / 90%);
+  text-decoration: none;
+}
+/* End Productivity */
+/* Start Team */
+.team {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.team .testimonials {
+  max-width: 310px;
+  margin: 0px auto 30px;
+  padding: 30px 25px;
+  background-color: hsl(219, 30%, 18%);
+  font-size: 13px;
+  border-radius: 5px;
+  box-shadow: 1px 0px 2px 4px hsl(217deg 28% 15%);
+}
+.team .testimonials:first-of-type {
+  position: relative;
+}
+.team .testimonials > img {
+  position: absolute;
+  top: -22px;
+  left: 6px;
+  width: 30px;
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  .team .testimonials > img {
+    position: absolute;
+    top: -47px;
+    left: -15px;
+    width: 70px;
+    z-index: -1;
+  }
+}
+.team .testimonials p {
+  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  .team .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+  }
+  .team .testimonials {
+    max-width: 400px;
+    margin: 0px;
+    padding: 45px 25px;
+  }
+  .team .testimonials p {
+    font-size: 18px;
+  }
+}
+.team .testimonials .profile {
+  display: flex;
+  column-gap: 15px;
+  margin-top: 25px;
+}
+.team .testimonials .profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.team .testimonials .profile .infos p {
+  font-size: 11px;
+}
+/* End Team */
+/* Start Sign-in */
+.sign-in {
+  position: relative;
+  top: 135px;
+}
+.sign-in .offer {
+  background-color: hsl(217, 28%, 15%);
+  padding: 30px 20px 35px;
+  text-align: center;
+  border-radius: 10px;
+}
+.sign-in .offer h3 {
+  font-size: 18px;
+}
+.sign-in .offer > p {
+  margin: 15px 0px 30px;
+}
+.sign-in form input {
+  display: block;
+  width: 285px;
+  max-width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  margin: 0px auto;
+}
+.sign-in form input[type="email"] {
+  margin-bottom: 25px;
+  padding-left: 45px;
+}
+.sign-in form input[type="email"]::placeholder {
+  opacity: 0.5;
+}
+.sign-in .offer form p {
+  display: none;
+  padding-left: 47px;
+  color: hsl(0, 100%, 63%);
+  text-align: start;
+  font-size: 12px;
+}
+.sign-in form input[type="email"]:focus ~ p {
+  display: block;
+}
+.sign-in form input[type="submit"] {
+  background-image: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .sign-in .offer {
+    padding: 30px 50px 35px;
+    margin: 0px auto;
+    max-width: 1000px;
+  }
+  .sign-in .offer h3 {
+    font-size: 34px;
+    margin: 0px auto;
+  }
+  .sign-in .offer > p {
+    margin: 15px auto 30px;
+    max-width: 750px;
+    font-size: 20px;
+  }
+  .sign-in form input[type="email"] {
+    width: calc(70% - 30px);
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .sign-in form input[type="submit"] {
+    width: 29%;
+    font-size: 15px;
+    margin-left: 30px;
+    display: inline-block;
+  }
+}
+.sign-in form input[type="submit"]:hover {
+  background-image: linear-gradient(90deg, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+/* End Sign-in */
+/* Start footer */
+footer {
+  background-color: hsl(216, 53%, 9%);
+  padding-top: 230px;
+}
+footer .container > img {
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
+  footer .foot {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    gap: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .foot {
+    grid-template-columns: 2fr 1fr auto auto 1fr;
+    gap: 70px;
+  }
+}
+footer p {
+  opacity: 0.9;
+}
+footer .foot > div:not(:first-of-type) {
+  padding-bottom: 40px;
+}
+footer .foot .location {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 29px;
+  margin-bottom: 15px;
+}
+footer .foot .location img {
+  margin-top: 5px;
+}
+footer .foot .contact-us > div {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+}
+footer .foot .contact-us .phone {
+  margin-bottom: 15px;
+}
+footer .phone img {
+  width: 14px;
+  margin-right: 5px;
+}
+footer .foot > div:nth-child(n + 3) p {
+  margin-bottom: 15px;
+}
+footer .foot .social-media {
+  text-align: center;
+}
+footer .foot .social-media a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding-top: 3px;
+  margin-right: 10px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+footer .foot .social-media a:hover {
+  border-color: hsl(176, 68%, 64%);
+  color: hsl(176, 68%, 64%);
+}
+/* End footer */
