@@ -353,6 +353,9 @@ footer .container > img {
     grid-template-columns: 1fr auto auto auto auto;
     gap: 15px;
   }
+  footer .foot > img {
+    margin-left: 0px;
+  }
 }
 @media (min-width: 1200px) {
   footer .foot {
